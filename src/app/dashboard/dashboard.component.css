@@ -1,0 +1,149 @@
+.canvas_editing {
+  padding: 20px 10px;
+  overflow-x: hidden;
+  background-color: #e3e3e3 !important;
+}
+
+.canvas_container {
+  background-color: rgb(66 66 66);
+  box-shadow: 0px 0px 20px 0px rgba(0, 94, 182, 0.2);
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.add_text {
+  border-radius: 3px;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 5px;
+}
+
+.font_family {
+  border-radius: 3px;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 5px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.font_size {
+  border-radius: 3px;
+  width: 55px;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #d7d7d7;
+}
+
+.text_weight button {
+  border-radius: 3px;
+  width: 50px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.text_weight button:first-child {
+  font-weight: 600;
+}
+
+.text_weight button:nth-child(2) {
+  font-style: italic;
+}
+
+.text_weight button:nth-child(3) {
+  text-decoration: underline;
+}
+
+.text_weight input {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.text_alignment button {
+  border-radius: 3px;
+  width: 70px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.undo_buttons button {
+  border-radius: 3px;
+  width: 70px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.canvas_background {
+  background-color: rgb(255 255 255);
+  box-shadow: 0px 0px 20px 0px rgba(0, 94, 182, 0.2);
+  border-radius: 4px;
+  width:900px;
+}
+
+.download_btn button {
+  margin: 5px 20px 5px 20px;
+  border-radius: 3px;
+  border: 1px solid #35c95e;
+  background-color: #007e23;
+  box-shadow: 0 0 10px #0000001a;
+  color: #fff;
+  width: 168px;
+  padding: 10px;
+  float: right;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  /* position: absolute;
+  right: -90px;
+  bottom: 0; */
+}
+
+.download_btn {
+  position: absolute;
+  right: -90px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .col-sm-3 {
+    width: 18%;
+  }
+}
+
+.dynamic_buttons {
+  margin-top: 20px;
+}
+
+.dynamic_buttons button {
+  border-radius: 3px;
+  width: 80px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.file_upload input {
+  border-radius: 3px;
+  width: 103px;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #d7d7d7;
+  color: #fff;
+  margin-top:5px;
+}

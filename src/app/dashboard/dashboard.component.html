@@ -1,0 +1,62 @@
+<div class="canvas_editing">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="canvas_container">
+        <button (click)="addText()" class="add_text">Add Text</button>
+        <div>
+          <!-- <label for="fontFamily">Font Family:</label> -->
+          <select id="fontFamily" (change)="changeFont($event)" class="font_family">
+            <option value="Arial">Arial</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+          </select>
+
+          <!-- <label for="fontSize">Font Size:</label> -->
+          <input type="number" id="fontSize" (input)="changeFontSize($event)" min="8" max="72" value="20"
+            class="font_size">
+        </div>
+
+        <div class="text_weight">
+          <button (click)="toggleBold()">B</button>
+          <button (click)="toggleItalic()">I</button>
+          <button (click)="toggleUnderline()">U</button> <br>
+          <input type="color" (change)="changeTextColor($event)" title="Text Color" />
+          <input type="color" (change)="changeBackgroundColor($event)" title="Background Color" />
+        </div>
+
+        <div class="text_alignment">
+          <button (click)="setTextAlign('left')">Left</button>
+          <button (click)="setTextAlign('center')">Center</button><br>
+          <button (click)="setTextAlign('right')">Right</button>
+          <button (click)="setTextAlign('justify')">Justify</button>
+        </div>
+
+        <div class="undo_buttons">
+          <button (click)="undo()">Undo</button>
+          <button (click)="redo()">Redo</button>
+        </div>
+
+        <div class="file_upload">
+          <input type="file" id="imageInput" (change)="onImageUpload($event)">
+        </div>
+
+        <div class="dynamic_buttons">
+          <button (click)="addFields('Name')">Name</button>
+          <button (click)="addFields('Address')">Address</button>
+          <button (click)="addFields('Signature')">Signature</button>
+          <button (click)="addFields('Account Number')">Acc No.</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+      <div class="canvas_background">
+        <canvas #canvas id="content"></canvas>
+      </div>
+      <div class="download_btn">
+        <button (click)="saveCanvas()">Download</button>
+        <!-- <button (click)="savePdf()">Download PDF</button> -->
+      </div>
+    </div>
+  </div>
+</div>
