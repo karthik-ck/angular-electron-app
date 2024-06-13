@@ -183,6 +183,8 @@ export class DashboardComponent implements OnInit {
       width = 300
     } else if (text.name === 'Signature') {
       width = 200
+    } else if (text.name === 'Name') {
+      width = 200
     } else {
       width = text.width
     }
